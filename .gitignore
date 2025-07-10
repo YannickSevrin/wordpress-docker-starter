@@ -1,0 +1,40 @@
+# ⚠️ Never version secrets
+.env
+
+# 🔒 Docker persistent database
+db_data/
+
+# 📸 Uploaded files (images, videos, etc.)
+wp-content/uploads/
+
+# 🔌 Manually installed plugins (optional)
+wp-content/plugins/*
+!wp-content/plugins/.gitkeep
+
+# 🎨 Installed themes (same, you can keep the ones you develop)
+wp-content/themes/*
+!wp-content/themes/.gitkeep
+
+# 🪵 Temporary or log files
+*.log
+*.tmp
+*.swp
+
+# 🐘 Temporary PHP configs (if you experiment)
+*.ini~
+
+# 🐳 Docker garbage (if you build custom images someday)
+*.tar
+*.img
+
+# 💻 IDE / OS files
+.vscode/
+.idea/
+.cursor/
+.cursorrules
+.cursor-tutor/
+.DS_Store
+Thumbs.db
+
+# ⚙️ Node dependencies (if you add a custom theme with npm/yarn)
+node_modules/
